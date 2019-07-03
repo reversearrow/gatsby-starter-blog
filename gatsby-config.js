@@ -38,7 +38,7 @@ module.exports = {
     {
     resolve: `gatsby-plugin-canonical-urls`,
     options: {
-        siteUrl: targetAddress.href.slice(0, -1),
+        siteUrl: `https://www.techsprite.ca`,
       },
     },
     {
