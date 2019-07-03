@@ -36,6 +36,12 @@ module.exports = {
       },
     },
     {
+    resolve: `gatsby-plugin-canonical-urls`,
+    options: {
+        siteUrl: targetAddress.href.slice(0, -1),
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
