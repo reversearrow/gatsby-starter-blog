@@ -13,5 +13,8 @@ phases:
         commands:            
             - 'npm run build'
     post_build:        
-        commands:            
+        commands:
+            - 'mkdir blog'
+            - 'mv public/* blog/'
+            - 'mv blog/ public/'
             - 'npm run deploy'
