@@ -15,8 +15,3 @@ phases:
     post_build:        
         commands:            
             - 'npm run deploy"
-artifacts:    
-    base-directory: public    
-    files:        
-        - '**/*'    
-    discard-paths: yes
