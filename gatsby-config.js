@@ -1,3 +1,5 @@
+const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://www.techsprite.ca`);
+
 module.exports = {
   pathPrefix: `/blog`,
   siteMetadata: {
@@ -13,9 +15,10 @@ module.exports = {
      {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: 'www-techsprite-ca-blogging',
-        protocol: 'https',
-        hostname: 'www.techsprite.ca',
+        bucketName: process.env.TARGET_BUCKET_NAME || "www-techsprite-ca-blogging",
+        region: process.env.AWS_REGION,
+        protocol: targetAddress.protocol.slice(0, -1),
+        hostname: targetAddress.hostname,
       }
     },
     {
