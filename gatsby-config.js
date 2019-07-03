@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
     title: `Gatsby Starter Blog`,
     author: `Kyle Mathews`,
@@ -9,6 +10,14 @@ module.exports = {
     },
   },
   plugins: [
+     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'www-techsprite-ca-blogging',
+        protocol: 'https',
+        hostname: 'www.techsprite.ca',
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
