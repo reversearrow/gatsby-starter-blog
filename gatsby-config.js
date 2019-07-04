@@ -1,6 +1,6 @@
 const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://www.techsprite.ca`);
 
-console.log("---------------------Environment Variables Start---------------------")
+console.log("---------------------Environment Variables START---------------------")
 console.log(process.env.TARGET_ADDRESS)
 console.log(process.env.AWS_REGION)
 console.log(process.env.TARGET_BUCKET_NAME)
