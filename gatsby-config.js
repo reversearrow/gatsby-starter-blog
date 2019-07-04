@@ -4,7 +4,7 @@ console.log("---------------------Environment Variables STARTING----------------
 console.log(process.env.TARGET_ADDRESS)
 console.log(process.env.AWS_REGION)
 console.log(process.env.TARGET_BUCKET_NAME)
-console.log("---------------------Environment Variables END---------------------")
+console.log("---------------------Environment Variables ENDING---------------------")
 
 module.exports = {
   pathPrefix: `/blog`,
