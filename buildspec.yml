@@ -18,3 +18,9 @@ phases:
             - 'mv public/* blog/'
             - 'mv blog/ public/'
             - 'npm run deploy'
+            
+cache:
+    paths:
+        - '.cache/*'
+        - 'node_modules/*'
+        - 'public/*'
