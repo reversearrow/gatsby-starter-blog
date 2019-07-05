@@ -1,9 +1,11 @@
 const targetAddress = new URL(process.env.TARGET_ADDRESS || `https://www.techsprite.ca`);
 
+
 console.log("---------------------Environment Variables START--------------------")
 console.log(process.env.TARGET_ADDRESS)
 console.log(process.env.AWS_REGION)
 console.log(process.env.TARGET_BUCKET_NAME)
+console.log(targetAddress.protocol.slice(0, -1))
 console.log("---------------------Environment Variables ENDING---------------------")
 
 module.exports = {
